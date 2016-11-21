@@ -31,7 +31,7 @@ for fields in readV:
     topo = nc.variables[nc.variables.keys()[fields]][:,:,:]
 
     #create new file
-    f1=open(url + "_" + str(nc.variables.keys()[fields]) + ".ascii", 'w')
+    f1=open(url_in + "_" + str(nc.variables.keys()[fields]) + ".ascii", 'w')
     for grid in topo:
         for line in grid:
             for v in line:
